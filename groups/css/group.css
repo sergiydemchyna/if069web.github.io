@@ -11,7 +11,7 @@ body {
     max-width: 1024px;
     margin: 20px auto;
     padding: 10px;
-    box-shadow: 0 0 8px 3px #333333;
+ 
     min-width: 412px;
 }
 li.row div.col-xs-3 {
