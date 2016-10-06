@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="facultet/css/bootstrap.css">
+    <link rel="stylesheet" href="facultet/css/master.css" media="screen" title="no title">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="logincontainer">
+        <form class="loginform" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" class="form-control" id="login" name="login" placeholder="Login" required [(ngModel)]="user.username" (onFocus)="delWarning()">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required name="password" [(ngModel)]="user.password" (onFocus)="delWarning()">
+            </div>
+            <a href="facultet/faculty.html" class="btn btn-default submit-btn loginbtn">admin</a>
+            <a href="studentPart/index.html" class="btn btn-default submit-btn loginbtn">student</a>
+        </form>
+        <!-- <div *ngIf="loginMessage">Wrong password or username</div> -->
+    </div>
+
+</body>
+
+</html>
