@@ -16,7 +16,8 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -49,10 +50,12 @@
             <!-- /.container-fluid -->
         </nav>
     </div>
+<div class='bread'>
 	<ol class="breadcrumb">
     <li><a href="#">Home</a></li>
     <li class="active">Specialty</li>
 </ol>
+</div>
 	<div class="faculty-container">
         <nav class="navbar navbar-default facultyNavbarDefault navbarDefault">
             <div class="container-fluid">
@@ -61,11 +64,13 @@
                     <div class="form-group inputSearch">
                         <input type="text" class="form-control" placeholder="пошук">
                     </div>
-                    <button type="button" class="btn btn-default">ПОШУК</button>
                 </form>
                 <form class="navbar-form navbar-right navbarForm">
                     <div class="form-group">
-                        <input type="image" class="form-control" src="add.jpg">
+                          <a class="btn btn-success" role="button" title="створити новий факультет"
+                       data-toggle="modal" data-target="#myModal2">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </a>
                         <select class="form-control media767" name="count" id="" title="виберіть кількість факультетів на сторінці">
                       <option value="5">5</option>
                       <option value="10">10</option>
@@ -155,5 +160,4 @@
 	</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-</body>
 </html>
