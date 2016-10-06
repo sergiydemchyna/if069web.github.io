@@ -69,7 +69,8 @@
             </form>
             <form class="navbar-form navbar-right navbarForm">
                 <div class="form-group">
-                    <a class="btn btn-success" role="button" title="створити новий факультет">
+                    <a class="btn btn-success" role="button" title="створити новий факультет"
+                       data-toggle="modal" data-target="#myModal2">
                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     </a>
                     <select class="form-control media767" name="count" id=""
@@ -178,8 +179,8 @@
                 </div>
                 <div class="modal-body modalBody">
                     <div class="input-group inputGroup">
-                        <span class="input-group-addon modalSpan" id="basic-addon3">Назва факультету:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url"
+                        <span class="input-group-addon modalSpan" id="basic-addon">Назва факультету:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url_"
                                aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
@@ -195,9 +196,36 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Створити новий факультет</h4>
+                </div>
+                <div class="modal-body modalBody">
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon4">Назва факультету:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url_2"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon5">Опис факультету:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url6"
+                               aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--теоретично візуалізацію пагінації має вставити ось цей компонент:
     https://github.com/ng-bootstrap/ng-bootstrap/blob/master/src/pagination/pagination.ts-->
-    <ngb-pagination></ngb-pagination>
+    <!--<ngb-pagination></ngb-pagination>-->
 </div>
 </body>
 

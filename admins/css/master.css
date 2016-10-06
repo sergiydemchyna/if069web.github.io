@@ -7,7 +7,7 @@ body {
 
 .main-menu {
     max-width: 1024px;
-    margin: 0px auto 10px auto;
+    margin: 0px auto ;
     padding: 10px;
     min-width: 420px;
     font-size: 12px;
@@ -20,34 +20,35 @@ body {
 
 .admin-container {
     max-width: 1024px;
-    margin: 10px auto 0px auto;
+    margin: 0 auto ;
     padding: 10px 10px 0 10px;
     min-width: 412px;
 }
 
+.adminNavbarDefault {
+    margin-bottom: 10px;
+}
 
 .adminNavbarFormLeft {
     font-size: 12px;
 }
 
 
-/*li.row div.col-xs-3 {
-    line-height: 30px;
-    text-align: center;
+.projectBreadcrumb {
+    max-width: 1024px;
+    height: 55px;
+    margin: 0px auto ;
+    padding: 10px;
+    min-width: 420px;
+    font-size: 12px;
 }
-.breadcrumb{
-    background-color: white;
-    margin-bottom:10px;
-}*/
+.projectBreadcrumb .breadcrumb {
+    border: 1px solid #e7e7e7;
+}
 
 .navbarDefault {
     margin-bottom: 10px;
 }
-
-
-/*.col-xs-3>button {
-    display: inline-block;
-}*/
 
 .modalBody {
     background-color: #f9f9f9;
@@ -65,12 +66,11 @@ body {
     text-align: center;
 }
 
-.admin_list li:nth-child(2n-1) {
+.admin_list li:nth-child(2n) {
     background-color: #f9f9f9;
 }
 .admin_list li:first-child {
-    color: white;
-    background-color: #333;
+    font-weight: bold;
 }
 /*.modalInput {
     width: 600px;
