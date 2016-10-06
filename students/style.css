@@ -1,8 +1,167 @@
+body {
+	/* border: 2px solid #e7e7e7; */
+	max-width: 1044px;
+	padding: 10px;
+	margin: 10px auto;
+}
+
 .info{
 	background-color:#f9f9f9;
 	border: 5px solid #fff;
 }
 
+
+
+.main-menu {
+	max-width: 1024px;
+	margin: 0px auto 10px auto;
+	padding: 10px;
+	min-width: 420px;
+	font-size:12px;
+}
+
 .time{
 	color:#000;
 }
+
+.faculty-container {
+	max-width: 1024px;
+	margin: 10px auto 0px auto;
+	padding: 10px 10px 0 10px;
+	min-width: 412px;
+}
+
+.leftPartProfile{
+	width: 60%;
+
+	/*border: 1px solid #e7e7e7;*/
+	display: inline-block;
+	float: left;
+}
+
+.rightPartProfile{
+	width: 38%;
+	display: inline-block;
+	float: right;
+}
+
+
+.faculty-container {
+	max-width: 1024px;
+	margin: 10px auto 0px auto;
+	padding: 10px 10px 0 10px;
+	min-width: 412px;
+}
+.facultyNavbarFormLeft {
+	font-size:12px;
+}
+.navbarDefault {
+	margin-bottom: 10px;
+}
+
+.studentheader{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.buttoncolumn{
+	text-align: right;
+}
+
+.studbutton{
+	/*background: url(../plus.jpeg) no-repeat right center;*/
+	background-size: contain;
+	background-color: white;
+}
+
+.breadcrumb {
+	border: 1px solid #e7e7e7;
+}
+
+table{
+	background-color: #f8f8f8;
+	border: 1px solid #e7e7e7;
+	width: 100%;
+}
+.tableHead{
+	text-align: center;
+}
+
+.cellForFoto{
+	width: 30%;
+}
+
+td{
+	/*border: 1px solid #e7e7e7;*/
+}
+th{  padding-top: 20px;
+padding-bottom: 20px;
+}
+.inputTable{
+	margin: 10px 0;
+	height: 34px;
+}
+
+.profileButton{
+	text-align: center;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 767px){
+
+	.navbarText {
+		width: 90px;
+		display: inline-block;
+		float: left;
+	}
+	.inputSearch {
+		width:60%;
+		display: inline-block;
+	}
+	.navbarForm {
+		height: 53px;
+		display: inline-block;
+		margin: -1px -15px;
+		border: none;
+	}
+	.facultyNavbarFormLeft {
+		width:330px;
+		margin-left:0px;
+	}
+	.inputSearch input {
+		margin-bottom:-17px;
+		width:180px;
+	}
+	.navbarForm button {
+		margin-bottom: 4px;
+	}
+	.media767 {
+		width: 46px;
+		display: inline-block;
+		margin: auto 5px;
+	}
+
+	.faculty-container {
+		text-align: center;
+	}
+
+	.closeBtn{
+		margin-left: 25px;
+	}
+
+	input.media767 {
+		margin-bottom: -12px;
+		margin-left: 20px;
+	}
+	select.media767 {
+		width: 60px;
+		padding-left: 7px;
+	}
+	/*.breadcrumb {
+        display: none;
+    }*/
+	.tableStriped th {
+		text-align: center;
+	}
+}
+
