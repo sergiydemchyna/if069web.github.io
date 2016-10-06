@@ -39,7 +39,7 @@
                     </ul>
                     <div class="nav navbar-nav navbar-right">
                         <a class="btn btn-danger btn-sm navbar-btn closeBtn" href="#" role="button">
-                            <span class="glyphicon glyphicon-off" aria-hidden="true" title="Вихід"> Вихід</span>
+                            <span class="glyphicon glyphicon-off" aria-hidden="true" title="Вихід"></span>
                         </a>
                     </div>
                 </div>
@@ -50,40 +50,40 @@
         </nav>
     </div>
 
-    <!-- Student header -->
+    <!-- Breadcramp begin -->
     <div class="faculty-container">
-        <div class="grouppos">
-            <span class="studentheader">СТУДЕНТИ : </span>
-        <select class="grouppos" placeholder="Виберіть групу">
-            <option disabled="disabled" selected="selected"> Виберіть групу </option>
-            <option label="IF-069-Web-UI" value="string:KS-04-1">IF-069-Web-UI</option>
-            <option label="KS-04-1" value="string:KS-04-1">KS-04-1</option>
-            <option label="KS-02-2" value="string:KS-02-2">KS-02-2</option>
-            <option label="KS-02-3" value="string:KS-02-3">KS-02-3</option>
-        </select>
-        </div>
+        <ol class="breadcrumb">
+            <li><a href="../statistic/index.html">Головна</a></li>
+            <li class="active">Студенти</li>
+        </ol>
     </div>
-    <!-- /Student header -->
+    <!-- Breadcramp end -->
 
     <div class="faculty-container">
         <nav class="navbar navbar-default facultyNavbarDefault navbarDefault">
             <div class="container-fluid">
 
-                <form class="navbar-form navbar-left navbarForm">
-                    <div class="form-group">
-                        <input class="form-control studbutton media767" src="plus.jpeg" type="button" title="Добавити нового студента" value="Добавити нового студента      ">
-                    </div>
-                </form>
+                <div class="grouppos">
+                    <div class="navbar-text navbarText studentheader">СТУДЕНТИ :</div>
+                    <select class="navbar-text" placeholder="Виберіть групу">
+                        <option disabled="disabled" selected="selected"> Виберіть групу </option>
+                        <option label="IF-069-Web-UI" value="string:KS-04-1">IF-069-Web-UI</option>
+                        <option label="KS-04-1" value="string:KS-04-1">KS-04-1</option>
+                        <option label="KS-02-2" value="string:KS-02-2">KS-02-2</option>
+                        <option label="KS-02-3" value="string:KS-02-3">KS-02-3</option>
+                    </select>
+                </div>
 
+                <form class="navbar-form navbar-right navbarForm">
 
-                <form class="navbar-form navbar-default navbar-left facultyNavbarFormLeft navbarForm">
                     <div class="form-group inputSearch">
                         <input type="text" class="form-control" placeholder="пошук по сторінці">
                     </div>
-                </form>
 
-                <form class="navbar-form navbar-right navbarForm">
                     <div class="form-group">
+                        <a class="btn btn-success" role="button" title="Добавити нового студента" data-toggle="modal" data-target="#myModal2">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </a>
                         <select class="form-control media767" name="count" id="" title="Кількість факультетів на сторінці">
                             <option value="5">5</option>
                             <option value="10">10</option>
@@ -106,6 +106,7 @@
                     <th>ID</th>
                     <th>Група</th>
                     <th>ПІБ</th>
+                    <th>№ залікової книжки</th>
                     <th></th>
                 </tr>
             </thead>
@@ -114,6 +115,7 @@
                     <td>1</td>
                     <td>IF-069-Web-UI</td>
                     <td>Гриневич Тарас</td>
+                    <td>000000000001</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -130,6 +132,7 @@
                     <td>2</td>
                     <td>IF-069-Web-UI</td>
                     <td>Демчина Сергій</td>
+                    <td>000000000002</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -146,6 +149,7 @@
                     <td>3</td>
                     <td>IF-069-Web-UI</td>
                     <td>Іванків Петро</td>
+                    <td>000000000003</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -162,6 +166,7 @@
                     <td>4</td>
                     <td>IF-069-Web-UI</td>
                     <td>Ілемський Володимир</td>
+                    <td>000000000004</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -178,6 +183,7 @@
                     <td>5</td>
                     <td>IF-069-Web-UI</td>
                     <td>Кісь Сергій</td>
+                    <td>000000000005</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -194,6 +200,7 @@
                     <td>6</td>
                     <td>IF-069-Web-UI</td>
                     <td>Максимець Василь</td>
+                    <td>000000000006</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -210,6 +217,7 @@
                     <td>7</td>
                     <td>IF-069-Web-UI</td>
                     <td>Пітчук Володя</td>
+                    <td>000000000007</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
@@ -225,7 +233,8 @@
                 <tr>
                     <td>8</td>
                     <td>IF-069-Web-UI</td>
-                    <td>Феценець Іван +++ </td>
+                    <td>Феценець Іван</td>
+                    <td>000000000008</td>
                     <td class="buttoncolumn">
                         <a class="btn btn-success btn-sm" href="#" role="button">
                             <span class="glyphicon glyphicon-user" aria-hidden="true" title="Профіль"></span>
