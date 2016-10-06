@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+<div class="group-container">
+     <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row header_nav"><h4>Студенти групи КС-04-1</h4></div>
+        <div class="row menu_p_bottom">
+            <div class="  col-md-offset-7 col-sm-4 col-md-3">
+                <input type="text" class="form-control" placeholder="пошук">
+            </div>
+
+            <div class="col-md-2 col-sm-12 col-xs-12 settings">
+               
+                    <input type="image" class="form-control add" src="plus.jpeg" alt="" title="створити новий факультет">
+
+                    <select class=" form-control " name="count" id="" title="виберіть кількість факультетів на сторінці">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+                    
+            </div>
+        </div>
+        </div> 
+        </nav> 
+   <div class="row container-fluid">
+    <ol class="breadcrumb">
+        <li><a href="#">Головна</a></li>
+        <li><a href="group.html">Групи</a></li>
+        <li class="active">Cтуденти групи</li>
+    </ol>
+   </div>
+
+        <div class="container-fluid">
+            <ul class="list-group faculty_list">
+                <li class="list-group-item row table_header">
+                    <div class="col-xs-2 col-sm-2 col-md-2 ">Реєстр. №</div>
+                    <div class="col-xs-5 col-sm-3 col-md-3">Група</div>
+                    <div class="col-xs-5 col-sm-3 col-md-3">П.І.Б.</div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 ">
+
+
+
+                      
+                    </div>
+                </li>
+
+                <li class="list-group-item row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-esm"><span class="table_header_sm">Реєстр.№</span>1</div>
+                    <div class="col-xs-5 col-sm-3 col-md-3 col-esm"><span class="table_header_sm">Група</span>КС-04-1</div>
+                    <div class="col-xs-5 col-sm-3 col-md-3 col-esm"><span class="table_header_sm">П.І.Б.</span>Іванів Іван Іванович</div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 button_xs ">
+
+                      <div class="glyph">
+
+                           <a class="btn btn-success btn-sm" href="list_of_student.html" role="button" title="Профіль">
+                               <span class="glyphicon glyphicon-user" aria-hidden="true" ></span>
+                           
+                           </a>
+                           <a class="btn btn-success btn-sm" href="#" role="button" title="Розклад">
+                              <span class="glyphicon glyphicon-th" aria-hidden="true" ></span>
+                           </a>
+                           <a class="btn btn-primary btn-sm" href="#" role="button" title="Редагувати" data-toggle="modal" data-target="#editGroup">
+                               <span class="glyphicon glyphicon-edit" aria-hidden="true" ></span>
+                           </a>
+                           <a class="btn btn-danger btn-sm" href="#" role="button" title="Видалити" data-toggle="modal" data-target="#removeGroup">
+                               <span class="glyphicon glyphicon-trash" aria-hidden="true" ></span>
+                           </a>
+                      </div>
+
+                      
+                    </div>
+                </li>
+
+               
+
+
+            </ul>
+        </div>
+  </div>
+</body>

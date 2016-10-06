@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/group.css">
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="main-menu">
+        <nav class="navbar navbar-default mainMenuNavbar navbarDefault">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+                    <!--<a class="navbar-brand" href="#">Logo</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../statistic/index.html">Статистика</a></li>
+                        <li class="active"><a href="#">Групи</a></li>
+                        <li ><a href="../facultet/faculty.html">Факультети<span class="sr-only">(current)</span></a></li>
+                        <li><a href="../subjects/index.html">Предмети</a></li>
+                        <li><a href="../Speciality/index.html">Спеціальності</a></li>
+                        <li><a href="../students/index.html">Студенти</a></li>
+                        <li><a href="../admins/index.html">Адміністратори</a></li>
+
+                    </ul>
+                    <div class="nav navbar-nav navbar-right">
+                        <a class="btn btn-danger btn-sm navbar-btn closeBtn" href="#" role="button" title="Вийти">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+
+<div class="group-container">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+            <div class="row header_nav"><h4>Групи</h4></div>
+        <div class="row menu_p_bottom">
+            <div class=" col-sm-4 col-md-2">
+                <input type="text" class="form-control" placeholder="пошук">
+            </div>
+            <div class=" col-xs-12 col-sm-4 col-md-4">
+                <select class="form-control select">
+                  <option disabled selected>Виберіть факультет</option>
+                  <option>ФАКН</option>
+                  <option>Нафтогазопроводи</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-xs-12 col-sm-4 col-md-4">
+                <select class="form-control select">
+                    <option disabled selected>Виберіть спеціальність</option>
+                    <option>Системи та мережі</option>
+                    <option>Автоматизація управління</option>
+                    <option>Автоматизація виробництва</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12 settings">
+
+                    <input type="image" class="form-control add" src="plus.jpeg" alt="" title="створити новий факультет">
+
+                    <select class=" form-control " name="count" id="" title="виберіть кількість факультетів на сторінці">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+
+            </div>
+        </div>
+        </div>
+        </nav>
+
+
+
+
+<div class="row container-fluid">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">Group</li>
+    </ol>
+</div>
+
+
+        <div class="container-fluid">
+            <ul class="list-group faculty_list">
+                <li class="list-group-item row table_header">
+                    <div class="col-xs-2 col-sm-1 col-md-1 ">№</div>
+                    <div class="col-xs-3 col-sm-2 col-md-2 ">Назва</div>
+                    <div class="col-xs-3 col-sm-2 col-md-3 ">Факультет</div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 ">Спеціальність</div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 ">
+
+
+
+
+                    </div>
+                </li>
+
+                <li class="list-group-item row">
+                    <div class="col-xs-2 col-sm-1 col-md-1 col-esm"><span class="table_header_sm">Номер</span>1</div>
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-esm"><span class="table_header_sm">Назва</span>КС-04-1</div>
+                    <div class="col-xs-3 col-sm-2 col-md-3 col-esm"><span class="table_header_sm">Факультет</span>ФАКН</div>
+                    <div class="col-xs-4 col-sm-3 col-md-3 col-esm"><span class="table_header_sm">Спеціальність</span>Системи та мережі</div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 button_xs ">
+
+                      <div class="glyph">
+                           <a class="btn btn-success btn-sm" href="list_of_tests.html" role="button" title="Результати">
+                               <span class="glyphicon glyphicon-stats" aria-hidden="true" ></span>
+
+                           </a>
+                           <a class="btn btn-success btn-sm" href="list_of_students.html" role="button" title="Переглянути студентів">
+                               <span class="glyphicon glyphicon-user" aria-hidden="true" ></span>
+
+                           </a>
+                           <a class="btn btn-success btn-sm" href="#" role="button" title="Розклад">
+                              <span class="glyphicon glyphicon-th" aria-hidden="true" ></span>
+                           </a>
+                           <a class="btn btn-primary btn-sm" href="#" role="button" title="Редагувати" data-toggle="modal" data-target="#editGroup">
+                               <span class="glyphicon glyphicon-edit" aria-hidden="true" ></span>
+                           </a>
+                           <a class="btn btn-danger btn-sm" href="#" role="button" title="Видалити" data-toggle="modal" data-target="#removeGroup">
+                               <span class="glyphicon glyphicon-trash" aria-hidden="true" ></span>
+                           </a>
+                      </div>
+
+
+                    </div>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+        <div class="modal fade" id="editGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Редагувати дані групи</h4>
+                    </div>
+                    <div class="modal-body modalBody">
+                        <div class="input-group inputGroup">
+                            <span class="input-group-addon modalSpan" id="basic-addon3">Назва групи:</span>
+                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                        <div class="input-group inputGroup">
+                            <span class="input-group-addon modalSpan" id="basic-addon3">Опис  групи:</span>
+                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="removeGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Підтвердіть видалення</h4>
+                    </div>
+
+                    <div class="modal-footer modal_button">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Remove</button>
+                        <button type="button" class="btn btn-primary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
