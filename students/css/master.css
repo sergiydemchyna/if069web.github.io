@@ -37,14 +37,14 @@ body {
     text-align: right;
 }
 
-.grouppos{
-    display: inline-block;
-}
-
 .studbutton{
     background: url(../plus.jpeg) no-repeat right center;
     background-size: contain;
     background-color: white;
+}
+
+.breadcrumb {
+    border: 1px solid #e7e7e7;
 }
 
 @media screen and (max-width: 767px){
