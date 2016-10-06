@@ -1,5 +1,6 @@
 
 body {
+	
     border: 2px solid #e7e7e7;
     max-width: 1044px;
     padding: 10px;
@@ -20,7 +21,6 @@ body {
 .main-menu {
     max-width: 1024px;
     margin: 0px auto 10px auto;
-    padding: 10px;
     min-width: 420px;
     font-size: 12px;
 }
@@ -40,25 +40,19 @@ body {
 .facultyNavbarFormLeft {
     font-size: 12px;
 }
-
-
-/*li.row div.col-xs-3 {
-    line-height: 30px;
-    text-align: center;
+.bread {
+    max-width: 1024px;
+    height: 55px;
+    margin: 0px auto 0px auto;
+    min-width: 420px;
+    font-size: 12px;
 }
-.breadcrumb{
-    background-color: white;
-    margin-bottom:10px;
-}*/
+
 
 .navbarDefault {
     margin-bottom: 10px;
 }
 
-
-/*.col-xs-3>button {
-    display: inline-block;
-}*/
 
 .modalBody {
     background-color: #f9f9f9;
@@ -77,9 +71,6 @@ body {
 .faculty_list li:nth-child(2n){
   background-color: #f9f9f9;
 }
-/*.modalInput {
-    width: 600px;
-}*/
 
 @media screen and (max-width: 767px) {
     .navbarText {
@@ -127,9 +118,7 @@ body {
         width: 60px;
         padding-left: 7px;
     }
-    /*.breadcrumb {
-        display: none;
-    }*/
+  
     .tableStriped th {
         text-align: center;
     }
@@ -140,9 +129,7 @@ body {
     .colxs12_number{
       font-size: 180%;
     }
-    /*.colxs12_btn{
-      text-align: center;
-    }*/
+  
     .faculty_btnsm {
         margin: auto 10px;
         width: 50px;
