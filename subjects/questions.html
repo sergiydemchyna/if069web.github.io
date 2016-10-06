@@ -17,7 +17,8 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -31,7 +32,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#">Статистика</a></li>
                     <li><a href="#">Групи</a></li>
-                    <li ><a href="#">Факультети</a></li>
+                    <li><a href="#">Факультети</a></li>
                     <li class="active"><a href="#">Предмети<span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Спеціальності</a></li>
                     <li><a href="#">Студенти</a></li>
@@ -51,6 +52,15 @@
         <!-- /.container-fluid -->
     </nav>
 </div>
+<div class="subject-container">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Предмети</a></li>
+        <li><a href="#">Тести</a></li>
+        <li class="active">Завдання
+    </ol>
+</div>
+
 
 <div class="subject-container">
     <nav class="navbar navbar-default navbarDefault">
@@ -59,22 +69,19 @@
 
             <form class="navbar-form navbar-right navbarForm">
                 <div class="form-group">
-                    <a href="#addtaskModal" class="btn btn-success " type="submit" data-toggle="modal"  role="button" title="додати завдання">
-                            <span class="glyphicon glyphicon-plus" aria-hidden="true">
+                    <a href="#addtaskModal" class="btn btn-success " type="submit" data-toggle="modal" role="button"
+                       title="додати завдання">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true">
                     </a>
-                    <button class="btn btn-danger" type="submit">Назад</button>
+                    <a href="test.html" class="btn btn-danger" type="submit" title="Назад">
+                                <span class="glyphicon glyphicon-share-alt" aria-hidden="true">
+                    </a>
+
                 </div>
             </form>
             <!-- </div> -->
         </div>
     </nav>
-
-    <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Предмети</a></li>
-        <li><a href="#">Тести</a></li>
-        <li class="active">Завдання
-    </ol>
 
     <div class="container-fluid">
         <ul class="list-group faculty_list">
@@ -87,16 +94,22 @@
                 <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"></div>
             </li>
             <li class="list-group-item row">
-                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Номер:</span>1</div>
+                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Номер:</span>1
+                </div>
                 <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"></div>
-                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Завдання:</span>2+2</div>
-                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Рівень:</span>1</div>
-                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Тип:</span>Мультивибір</div>
+                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Завдання:</span>2+2
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Рівень:</span>1
+                </div>
+                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span
+                        class="hidden-md hidden-lg hidden-sm">Тип:</span>Мультивибір
+                </div>
                 <div class="col-xs-12 col-sm-3 col-md-3 colxs12_btn">
                     <a class="btn btn-success btn-sm faculty_btnsm" href="#" role="button" title="Завдання">
                         <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                     </a>
-                    <a class="btn btn-primary btn-sm faculty_btnsm" href="#" role="button" title="Редагувати" data-toggle="modal" data-target="#changetaskModal">
+                    <a class="btn btn-primary btn-sm faculty_btnsm" href="#" role="button" title="Редагувати"
+                       data-toggle="modal" data-target="#changetaskModal">
                         <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                     </a>
                     <a class="btn btn-danger btn-sm faculty_btnsm" href="#" role="button" title="Видалити">
@@ -114,7 +127,8 @@
                     <a class="btn btn-success btn-sm faculty_btnsm" href="#" role="button" title="Завдання">
                         <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                     </a>
-                    <a class="btn btn-primary btn-sm faculty_btnsm" href="#" role="button" title="Редагувати" data-toggle="modal" data-target="#changetaskModal">
+                    <a class="btn btn-primary btn-sm faculty_btnsm" href="#" role="button" title="Редагувати"
+                       data-toggle="modal" data-target="#changetaskModal">
                         <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                     </a>
                     <a class="btn btn-danger btn-sm faculty_btnsm" href="#" role="button" title="Видалити">
@@ -129,25 +143,30 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Редагувати завдання</h4>
                 </div>
                 <div class="modal-body modalBody">
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Зображення:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Завдання:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Рівень:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Тип завдання:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -161,25 +180,30 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Додати завдання</h4>
                 </div>
                 <div class="modal-body modalBody">
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Зображення:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Завдання:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Рівень:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                     <div class="input-group inputGroup">
                         <span class="input-group-addon modalSpan" id="basic-addon3">Тип завдання:</span>
-                        <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
                     </div>
                 </div>
                 <div class="modal-footer">

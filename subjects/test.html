@@ -12,175 +12,201 @@
 </head>
 
 <body>
-    <div class="main-menu">
-        <nav class="navbar navbar-default mainMenuNavbar navbarDefault">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-                    <!--<a class="navbar-brand" href="#">Logo</a>-->
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Статистика</a></li>
-                        <li><a href="#">Групи</a></li>
-                        <li ><a href="#">Факультети</a></li>
-                        <li class="active"><a href="#">Предмети<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Спеціальності</a></li>
-                        <li><a href="#">Студенти</a></li>
-                        <li><a href="#">Адміністратори</a></li>
-
-                    </ul>
-                    <div class="nav navbar-nav navbar-right">
-                        <a class="btn btn-danger btn-sm navbar-btn closeBtn" href="#" role="button">
-                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                        </a>
-                    </div>
-
-                </div>
-                <!-- /.navbar-collapse -->
-
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-    </div>
-
-    <div class="subject-container">
-        <nav class="navbar navbar-default navbarDefault">
-            <div class="container-fluid">
-                <div class="navbar-text navbarText">Тести по предмету: Кібернетика</div>
-
-                <form class="navbar-form navbar-right navbarForm">
-                    <div class="form-group">
-                        <a href="#addTestModal" class="btn btn-success " type="submit" data-toggle="modal"  role="button" title="додати тест">
-                            <span class="glyphicon glyphicon-plus" aria-hidden="true">
-                        </a>
-                        <button class="btn btn-danger" type="submit">Назад</button>
-                    </div>
-                </form>
-                <!-- </div> -->
-            </div>
-        </nav>
-
-        <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Предмети</a></li>
-            <li class="active">Тести
-        </ol>
-
+<div class="main-menu">
+    <nav class="navbar navbar-default mainMenuNavbar navbarDefault">
         <div class="container-fluid">
-            <ul class="list-group faculty_list">
-                <li class="list-group-item row hidden-xs">
-                    <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><b>Номер</b></div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"><b>Назва тесту</b></div>
-                    <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><b>Кількість завдань</b></div>
-                    <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><b>Тривалість тесту</b></div>
-                    <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><b>Статус</b></div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"></div>
-                </li>
-                <li class="list-group-item row">
-                    <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Номер:</span>1</div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Назва тесту:</span>Кібернетика</div>
-                    <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Кількість завдань:</span>5</div>
-                    <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Тривалість тесту:</span>1</div>
-                    <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Статус:</span>Доступно</div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 colxs12_btn">
-                        <a class="btn btn-success btn-sm faculty_btnsm" href="test-info.html" role="button" title="Інформація по тесту">
-                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                        </a>
-                        <a class="btn btn-success btn-sm faculty_btnsm" href="questions.html" role="button" title="Завдання">
-                            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
-                        </a>
-                        <a class="btn btn-primary btn-sm faculty_btnsm" href="#" role="button" title="Редагувати" data-toggle="modal" data-target="#myModal">
-                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                        </a>
-                        <a class="btn btn-danger btn-sm faculty_btnsm" href="#" role="button" title="Видалити">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- Modal for change Test -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Редагувати тест</h4>
-                    </div>
-                    <div class="modal-body modalBody">
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Кількість задач:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Час для проходження:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Статус:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Кількість спроб:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Logo</a>-->
             </div>
-        </div>
 
-        <!-- Modal for add Test -->
-        <div class="modal fade" id="addTestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Додати тест</h4>
-                    </div>
-                    <div class="modal-body modalBody">
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Кількість задач:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Час для проходження:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Статус:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                        <div class="input-group inputGroup">
-                            <span class="input-group-addon modalSpan" id="basic-addon3">Кількість спроб:</span>
-                            <input type="text" class="form-control modalInput" id="basic-url" aria-describedby="basic-addon3">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
-                    </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Статистика</a></li>
+                    <li><a href="#">Групи</a></li>
+                    <li><a href="#">Факультети</a></li>
+                    <li class="active"><a href="#">Предмети<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Спеціальності</a></li>
+                    <li><a href="#">Студенти</a></li>
+                    <li><a href="#">Адміністратори</a></li>
+
+                </ul>
+                <div class="nav navbar-nav navbar-right">
+                    <a class="btn btn-danger btn-sm navbar-btn closeBtn" href="#" role="button">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
                 </div>
+
             </div>
+            <!-- /.navbar-collapse -->
+
         </div>
-        <!--теоретично візуалізацію пагінації має вставити ось цей компонент:
-        https://github.com/ng-bootstrap/ng-bootstrap/blob/master/src/pagination/pagination.ts-->
-        <ngb-pagination></ngb-pagination>
+        <!-- /.container-fluid -->
+    </nav>
+</div>
+
+<div class="subject-container">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Предмети</a></li>
+        <li class="active">Тести
+    </ol>
+</div>
+
+<div class="subject-container">
+    <nav class="navbar navbar-default navbarDefault">
+        <div class="container-fluid">
+            <div class="navbar-text navbarText">Тести по предмету: Кібернетика</div>
+
+            <form class="navbar-form navbar-right navbarForm">
+                <div class="form-group">
+                    <a href="#addTestModal" class="btn btn-success " type="submit" data-toggle="modal" role="button"
+                       title="додати тест">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true">
+                    </a>
+                    </a>
+                    <a href="index.html" class="btn btn-danger" type="submit" title="Назад">
+                                <span class="glyphicon glyphicon-share-alt" aria-hidden="true">
+                    </a>
+                </div>
+            </form>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <ul class="list-group faculty_list">
+            <li class="list-group-item row hidden-xs">
+                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><b>Номер</b></div>
+                <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"><b>Назва тесту</b></div>
+                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><b>Кількість завдань</b></div>
+                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><b>Тривалість тесту</b></div>
+                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><b>Статус</b></div>
+                <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"></div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Номер:</span>1
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Назва тесту:</span>Кібернетика
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Кількість завдань:</span>5
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Тривалість тесту:</span>1
+                </div>
+                <div class="col-xs-12 col-sm-1 col-md-1 colxs12_number"><span class="hidden-md hidden-lg hidden-sm">Статус:</span>Доступно
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 colxs12_btn">
+                    <a class="btn btn-success btn-sm faculty_btnsm" href="test-info.html" role="button"
+                       title="Інформація по тесту">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a class="btn btn-success btn-sm faculty_btnsm" href="questions.html" role="button"
+                       title="Завдання">
+                        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                    </a>
+                    <a class="btn btn-primary btn-sm faculty_btnsm" href="#" role="button" title="Редагувати"
+                       data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    </a>
+                    <a class="btn btn-danger btn-sm faculty_btnsm" href="#" role="button" title="Видалити">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
     </div>
+
+    <!-- Modal for change Test -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Редагувати тест</h4>
+                </div>
+                <div class="modal-body modalBody">
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Кількість задач:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Час для проходження:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Статус:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Кількість спроб:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for add Test -->
+    <div class="modal fade" id="addTestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Додати тест</h4>
+                </div>
+                <div class="modal-body modalBody">
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Кількість задач:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Час для проходження:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Статус:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group inputGroup">
+                        <span class="input-group-addon modalSpan" id="basic-addon3">Кількість спроб:</span>
+                        <input type="text" class="form-control modalInput" id="basic-url"
+                               aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--теоретично візуалізацію пагінації має вставити ось цей компонент:
+    https://github.com/ng-bootstrap/ng-bootstrap/blob/master/src/pagination/pagination.ts-->
+    <ngb-pagination></ngb-pagination>
+</div>
 </body>
 
 </html>
