@@ -28,7 +28,7 @@ body {
 
 .main-menu {
     max-width: 1024px;
-    margin: 0px auto 10px auto;
+    margin: 0px auto 0px auto;
     padding: 10px;
     min-width: 420px;
     font-size: 12px;
@@ -39,9 +39,22 @@ body {
     min-width: 420px;
 }
 
+.projectBreadcrumb {
+    max-width: 1024px;
+    height: 55px;
+    /*background-color: #31b0d5;*/
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    min-width: 420px;
+    font-size: 12px;
+}
+.projectBreadcrumb .breadcrumb {
+    border: 1px solid #e7e7e7;
+}
+
 .faculty-container {
     max-width: 1024px;
-    margin: 10px auto 0px auto;
+    margin: 0px auto 0px auto;
     padding: 10px 10px 0 10px;
     min-width: 412px;
 }
@@ -85,6 +98,9 @@ body {
     text-align: center;
 }
 
+.faculty_list li:first-child {
+    font-weight: bold;
+}
 .faculty_list li:nth-child(2n) {
     background-color: #f9f9f9;
 }
